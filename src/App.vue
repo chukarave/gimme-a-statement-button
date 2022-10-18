@@ -1,17 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img class="wikidata-logo" alt="Wikidata logo" src="./assets/Wikidata-logo.svg">
+  <div class="statement-button">
+     <statement-button />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import StatementButton from './components/StatementButton.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    StatementButton
   }
 }
+
 </script>
 
 <style>
@@ -22,5 +25,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.wikidata-logo {
+  height: 226px;
+  width: 320px;
 }
 </style>
